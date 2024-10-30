@@ -1,71 +1,77 @@
-<div align= "center">
-    <h1> 🛠️SmartBuddy: Personal Assistant Chatbot🤖</h1>
+<div align="center">
+    <h1>🛠️ SmartBuddy: Personal Assistant Chatbot 🤖</h1>
 </div>
 
+---
 
+### 📜 Introduction
 
-<!-- <div align="center">
-<img src="https://cdn.discordapp.com/attachments/941582479117127680/1111543600879259749/20230526075532.png" width="350px"> -->
-</div>
+**SmartBuddy** is a Personal Assistant Chatbot designed to assist users with various tasks based on their instructions. It can access external APIs to provide real-time information and demonstrates **tool-use** capabilities for enhanced functionality, including interaction with LLMs (Large Language Models).
 
-🔨This project aims to create a **SmartBuddy: Your Personal Assistant Chatbot** which can assist the human as per their instruction. It can also access external APIs to answer queries related to real-time information. It can also show **tool-use** capability.
+---
 
+### 📂 Project Structure
+- **Backend**: Contains the server-side code and tool-agent scripts.
+- **Frontend**: Built with React for a responsive, interactive user interface.
+- **Images**: Contains visuals and screenshots for demo purposes.
 
+---
 
-### Install
-Clone this repository and navigate to the ToolBench folder.
-```bash
-https://github.com/manishhnnegi/SmartBuddy.git
-cd SmartBuddy
-```
-Install Package (python>=3.9)
-```bash
-pip install -r requirements.txt
-```
+### ⚙️ Installation
 
-## Inference With Our React App
-- Then run the following command to run the experiments:
-```bash
-cd Backend
-```
-- To inference with LLMs, run the following commands:
-```bash
-python retrival_agent_chat.py
-```
-- Then run the following command to run the Tool agent server:
-```bash
-python tool_agent.py
+1. **Clone the repository** and navigate to the project folder:
+    ```bash
+    git clone https://github.com/manishhnnegi/SmartBuddy.git
+    cd SmartBuddy
+    ```
 
-```
-- Then run the React frontend server:
-```bash
-npm start
-```
+2. **Install required packages** (Python >= 3.9):
+    ```bash
+    pip install -r requirements.txt
+    ```
 
+---
 
+### 🚀 Start the Application
 
-### Demo UI in React
+1. **Backend Setup**
+   - Navigate to the backend directory:
+     ```bash
+     cd Backend
+     ```
+   - Run the retrieval agent:
+     ```bash
+     python retrival_agent_chat.py
+     ```
+   - Start the Tool Agent server:
+     ```bash
+     python tool_agent.py
+     ```
 
-I shown **A demo of using React**
+2. **Frontend Setup**
+   - In the frontend directory, start the React server:
+     ```bash
+     npm start
+     ```
+
+---
+
+### 🎨 Demo UI in React
+
+Below is a screenshot of **SmartBuddy’s** chat interface built with React.
 
 <br>
 <div align="center">
-
-<img src="Images\chat.png" width="800px">
-
+    <img src="Images/chat.png" width="800px">
 </div>
 <br>
 
+---
 
-<!-- We also provide **A demo of using ToolLLaMA**
+### 📝 Git Commands
 
-<div align="center">
-
-https://github.com/OpenBMB/ToolBench/assets/25274507/f1151d85-747b-4fac-92ff-6c790d8d9a31
-
-</div> -->
-
-### git commands
+Basic git workflow:
+```bash
 git add .
-git commit -m "dhere"
+git commit -m "description of changes"
 git push origin main
