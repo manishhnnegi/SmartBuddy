@@ -1,70 +1,152 @@
-# Getting Started with Create React App
+<div align= "center">
+    <h1> 🛠️Smart Assistant Agent with Real-Time External Tool Access🤖</h1>
+</div>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
 
-In the project directory, you can run:
+<!-- <div align="center">
+<img src="https://cdn.discordapp.com/attachments/941582479117127680/1111543600879259749/20230526075532.png" width="350px"> -->
+</div>
 
-### `npm start`
+🔨This project aims to create a **Smart Assistant Agent with Real-Time External Tool Access** which can assist the human as per their instruction. It can also access external APIs to answer queries related to real-time information. It can also show **tool-use** capability.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Till now . . . 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+🔨below external APIs(Tools) has been integrated.
 
-### `npm test`
+1. **Ecommerce API**
+2. **Wikipidea Search API**
+3. **Translation API**
+4. **Weather API**
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+🔨Memory has been integrated using langchain's Generative Agent Memory.Based on pthe paper [["Generative Agents: Interactive Simulacra of Human Behavior"](https://arxiv.org/abs/2304.03442)] 
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Install
+Clone this repository and navigate to the ToolBench folder.
+```bash
+https://github.com/manishhnnegi/Tool-Retrieval-System.git
+cd Tool-Retrieval-System
+```
+Install Package (python>=3.9)
+```bash
+pip install -r requirements.txt
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Inference With Our RapidAPI Server
+- In gitbash terminal:
+```bash
+source activate <env_name>
+```
+- Then run the following command to run the experiments:
+```bash
+bash run.sh
+```
 
-### `npm run eject`
+## Inference With Our Streamlit Server
+- To inference with ToolLLaMA, run the following commands:
+```bash
+python retrival_agent_streamlit.py
+```
+- Then run the following command to run the experiments:
+```bash
+python tool_agent.py
+```
+- Then run the streamlit frontend server:
+```bash
+streamlit run app.py
+```
+This server will be available on `http://localhost:8501/`. To start a request, call `http://localhost:8501/stream` with a GET or POST request containing a JSON object with the following fields:
+```json
+{
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+    "query": "what is weather in Delhi today?",
+    "top_k": 1,  
+}
+```
+## Inference With Our React App
+- To inference with ToolLLaMA, run the following commands:
+```bash
+python retrival_agent_streamlit.py
+```
+- Then run the following command to run the experiments:
+```bash
+cd Frontend
+```
+- Then run the streamlit frontend server:
+```bash
+npx create-react-app myui
+cd myui
+npm install axios
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Directory Structure
+- Folder structure:
+```bash
+Tool-Retrieval-System/
+├── LLM/
+│   ├── __init__.py
+│   └── openai_server.py
+└── Prompts/
+    ├── __init__.py
+    └── react_prompt.py
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+- Now the file structure under `data/toolenv/` should be:
+```
+├── /tools/
+│  ├── /eCommerce/
+│  │  ├── search.json
+│  │  ├── /search/
+│  │  │  └── api.py
+│  │  └── ...
+│  ├── ...
+│  ├── /Translation/
+│  │  ├── translate.json
+│  │  ├── /translate/
+│  │  │  └── api.py
+└─
+```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+### Block Duagram:
+✨Here is an overview of the dataset construction, training, and evaluation.
 
-## Learn More
+<br>
+<div align="center">
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+<img src="Images\blockdig2.png" width="800px">
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+</div>
+<br>
 
-### Code Splitting
+### Demo UI in React
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+I shown **A demo of using ToolLLaMA**
 
-### Analyzing the Bundle Size
+<br>
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+<img src="Images\amazon.png" width="800px">
 
-### Making a Progressive Web App
+</div>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+**Generated Response**
 
-### Advanced Configuration
+<br>
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+<img src="Images\amazon2.png" width="800px">
 
-### Deployment
+</div>
+<br>
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+<!-- We also provide **A demo of using ToolLLaMA**
 
-### `npm run build` fails to minify
+<div align="center">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+https://github.com/OpenBMB/ToolBench/assets/25274507/f1151d85-747b-4fac-92ff-6c790d8d9a31
+
+</div> -->
