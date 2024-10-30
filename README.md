@@ -1,5 +1,5 @@
 <div align= "center">
-    <h1> 🛠️SmartBuddy: Your Personal Assistant Chatbot🤖</h1>
+    <h1> 🛠️SmartBuddy: Personal Assistant Chatbot🤖</h1>
 </div>
 
 
@@ -15,26 +15,24 @@
 ### Install
 Clone this repository and navigate to the ToolBench folder.
 ```bash
-https://github.com/manishhnnegi/Tool-Retrieval-System.git
-cd Tool-Retrieval-System
+https://github.com/manishhnnegi/SmartBuddy.git
+cd SmartBuddy
 ```
 Install Package (python>=3.9)
 ```bash
 pip install -r requirements.txt
 ```
 
-
-
 ## Inference With Our React App
 - Then run the following command to run the experiments:
 ```bash
-cd Frontend
+cd Backend
 ```
-- To inference with ToolLLaMA, run the following commands:
+- To inference with LLMs, run the following commands:
 ```bash
 python retrival_agent_chat.py
 ```
-- Then run the following command to run the experiments:
+- Then run the following command to run the Tool agent server:
 ```bash
 python tool_agent.py
 
@@ -66,3 +64,8 @@ I shown **A demo of using React**
 https://github.com/OpenBMB/ToolBench/assets/25274507/f1151d85-747b-4fac-92ff-6c790d8d9a31
 
 </div> -->
+
+### git commands
+git add .
+git commit -m "dhere"
+git push origin main
