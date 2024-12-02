@@ -71,6 +71,20 @@ Below is a screenshot of **SmartBuddy’s** chat interface built with React.
      ```bash
      python tool_agent.py
      ```
+   - Within `data/toolenv/`, ensure the following structure:
+      ```
+      ├── /tools/
+      │  ├── /eCommerce/
+      │  │  ├── search.json
+      │  │  ├── /search/
+      │  │  │  └── api.py
+      │  │  └── ...
+      │  ├── /Translation/
+      │  │  ├── translate.json
+      │  │  ├── /translate/
+      │  │  │  └── api.py
+      └── ...
+      ```
 
 2. **Frontend Setup**
    - In the frontend directory, start the React server:
