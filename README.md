@@ -10,6 +10,30 @@
 
 ---
 
+### Architecture Overview
+
+Below is a high-level block diagram illustrating the interaction amoung retrival agent server , API reteriver server and tool server:
+
+<br>
+<div align="center">
+    <img src="Images/blockdig2.png" width="800px">
+</div>
+<br>
+
+---
+
+### 🎨 Demo UI in React
+
+Below is a screenshot of **SmartBuddy’s** chat interface built with React.
+
+<br>
+<div align="center">
+    <img src="Images/chat.png" width="800px">
+</div>
+<br>
+
+---
+
 ### 📂 Project Structure
 - **Backend**: Contains the server-side code and tool-agent scripts.
 - **Frontend**: Built with React for a responsive, interactive user interface.
@@ -53,18 +77,6 @@
      ```bash
      npm start
      ```
-
----
-
-### 🎨 Demo UI in React
-
-Below is a screenshot of **SmartBuddy’s** chat interface built with React.
-
-<br>
-<div align="center">
-    <img src="Images/chat.png" width="800px">
-</div>
-<br>
 
 ---
 
