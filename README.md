@@ -1,12 +1,12 @@
 <div align="center">
-    <h1>🛠️ SmartBuddy: Personal Assistant Chatbot 🤖</h1>
+    <h1>🛠️ SmartBuddy: Assistant Agent Bot 🤖</h1>
 </div>
 
 ---
 
 ### 📜 Introduction
 
-**SmartBuddy** is a Personal Assistant Chatbot designed to assist users with various tasks based on their instructions. It can access external APIs to provide real-time information and demonstrates **tool-use** capabilities for enhanced functionality, including interaction with LLMs (Large Language Models).
+**SmartBuddy** is a Assistant Agent Bot designed to assist users with various tasks based on their instructions. It can access external APIs to provide real-time information and demonstrates **tool-use** capabilities for enhanced functionality, including interaction with LLMs (Large Language Models).
 
 ---
 
