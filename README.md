@@ -8,6 +8,15 @@
 
 **SmartBuddy** is a Assistant Agent Bot designed to assist users with various tasks based on their instructions. It can access external APIs to provide real-time information and demonstrates **tool-use** capabilities for enhanced functionality, including interaction with LLMs (Large Language Models).
 
+This assistant currently integrates the following external APIs:
+
+1. **E-commerce API**: Retrieve product information and manage orders.
+2. **Wikipedia Search API**: Look up information from Wikipedia.
+3. **Translation API**: Translate text to various languages.
+4. **Weather API**: Fetch up-to-date weather information.
+
+**Memory Integration**: Utilizing LangChain’s Generative Agent Memory, this project is based on the paper ["Generative Agents: Interactive Simulacra of Human Behavior"](https://arxiv.org/abs/2304.03442), enhancing the agent’s memory and user interaction.
+
 ---
 
 ### Architecture Overview
