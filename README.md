@@ -19,18 +19,6 @@ This assistant currently integrates the following external APIs:
 
 ---
 
-### Architecture Overview
-
-Below is a high-level block diagram illustrating the interaction amoung retrival agent server , API reteriver server and tool server:
-
-<br>
-<div align="center">
-    <img src="Images/blockdig2.png" width="800px">
-</div>
-<br>
-
----
-
 ### 🎨 Demo UI in React
 
 Below is a screenshot of **SmartBuddy’s** chat interface built with React.
@@ -38,6 +26,19 @@ Below is a screenshot of **SmartBuddy’s** chat interface built with React.
 <br>
 <div align="center">
     <img src="Images/chat.png" width="800px">
+</div>
+<br>
+
+
+---
+
+### Architecture Overview
+
+Below is a high-level block diagram illustrating the interaction amoung retrival agent server , API reteriver server and tool server:
+
+<br>
+<div align="center">
+    <img src="Images/blockdig2.png" width="800px">
 </div>
 <br>
 
